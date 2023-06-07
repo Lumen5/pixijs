@@ -1,5 +1,5 @@
 {
-  "name": "pixi.js",
+  "name": "@lumen5/pixi.js",
   "version": "6.5.2",
   "description": "PixiJS without the CanvasRenderer fallback, modern browsers only",
   "author": "Mat Groves",
@@ -31,11 +31,11 @@
     }
   },
   "homepage": "http://www.pixijs.com/",
-  "bugs": "https://github.com/pixijs/pixi.js/issues",
+  "bugs": "https://github.com/Lumen5/pixijs/issues",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pixijs/pixi.js.git"
+    "url": "https://github.com/Lumen5/pixi.js.git"
   },
   "scripts": {
     "test": "floss --path test"

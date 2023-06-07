@@ -14,6 +14,8 @@ export function isWebGLSupported(): boolean
     {
         supported = (function supported(): boolean
         {
+            // eslint-disable-next-line no-console
+            console.log('|------- PIXI.isWebGLSupported');
             const contextOptions = {
                 stencil: true,
                 failIfMajorPerformanceCaveat: settings.FAIL_IF_MAJOR_PERFORMANCE_CAVEAT,
@@ -23,6 +25,8 @@ export function isWebGLSupported(): boolean
             {
                 if (!settings.ADAPTER.getWebGLRenderingContext())
                 {
+                    // eslint-disable-next-line no-console
+                    console.log('no context');
                     return false;
                 }
 
@@ -33,6 +37,14 @@ export function isWebGLSupported(): boolean
                 ) as WebGLRenderingContext;
 
                 const success = !!(gl && gl.getContextAttributes().stencil);
+
+                if (!success)
+                {
+                    // eslint-disable-next-line no-console
+                    console.log('no gl', !!gl);
+                    // eslint-disable-next-line no-console
+                    console.log('no stencil', !!gl.getContextAttributes().stencil);
+                }
 
                 if (gl)
                 {
@@ -50,6 +62,8 @@ export function isWebGLSupported(): boolean
             }
             catch (e)
             {
+                // eslint-disable-next-line no-console
+                console.log('error', e);
                 return false;
             }
         })();

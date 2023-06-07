@@ -1,5 +1,5 @@
 {
-  "name": "@pixi/node",
+  "name": "@lumen5/pixi-node",
   "version": "6.5.2",
   "description": "Bundle for PixiJS with support for NodeJS",
   "homepage": "http://pixijs.com/",

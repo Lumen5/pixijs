@@ -1,5 +1,5 @@
 {
-  "name": "pixi.js-monorepo",
+  "name": "@lumen5/pixi.js-monorepo",
   "private": true,
   "workspaces": [
     "bundles/*",

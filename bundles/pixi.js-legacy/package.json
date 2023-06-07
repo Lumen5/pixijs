@@ -1,5 +1,5 @@
 {
-  "name": "pixi.js-legacy",
+  "name": "@lumen5/pixi.js-legacy",
   "version": "6.5.2",
   "description": "The HTML5 Creation Engine: Create beautiful digital content with the fastest, most flexible 2D WebGL renderer.",
   "author": "Mat Groves",
