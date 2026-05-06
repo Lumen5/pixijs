@@ -27,7 +27,9 @@ jobs:
         node-version: 24
         registry-url: 'https://registry.npmjs.org'
     - name: Install Dependencies
-      run: npm ci
+      # --engine-strict=false: transitive deps declare older Node engines but work on 24.
+      # Bumping them is a separate scope; revisit when those deps are upgraded.
+      run: npm ci --engine-strict=false
 
     - name: Run Unit Tests
       run: xvfb-run --auto-servernum npm run coverage
